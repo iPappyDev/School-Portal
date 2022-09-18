@@ -12,15 +12,17 @@ img{
     height: 150px;
 }
 .container{
-    height: 600px; max-width: 400px; background-color: white; gap: 20px;
+    height: 530px; max-width: 400px; background-color: white; gap: 20px;
 }
 label{
-    margin-top: 20px;
-    margin-left: -230px;
+    margin-top: 10px;
+    margin-left: -200px;
 }
 button{
     background-color: #f8da54;
     border: 0;
+    height: 50px;
+    width: 100px;
 }
 input{
     font-size: 1.5em; width: 30%;
