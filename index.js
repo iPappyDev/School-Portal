@@ -17,38 +17,23 @@ function signup(newStudent=" "){
         (lastName = lastname.value) && 
         (mail = userEmail.value) && 
         (password = userPassword.value)){
-        disp.innerHTML = "<h2> Successfully Registered. Your Matric Number is "+ newStudent.matricNumber + "</h2>"
+        disp.innerHTML = "<h4> Successfully Registered. Your Matric Number is "+ newStudent.matricNumber + "</h4>"
         disp.style.color = "white"
         allStudents.push(newStudent)
-        // console.log(allStudents)
-        // disp.innerHTML = "<h2> Successfully Registered. Your Matric Number is "+ newStudent.matricNumber + "</h2>"
-        // disp.style.color = "white"
         registrationnumber.value = "",
         firstname.value = "",
         lastname.value = "",
         userEmail.value = "",
         userEmail.value = "",
         userPassword.value = ""
-        // window.location.href = "signin.html"
-        // disp.innerHTML = ""
     }else {
         alert("fill in d form")
     }
-    
-    // allStudents.push(newStudent)
-    // console.log(allStudents)
-    
-    // question; i enter info it'll only bring in the matricnumber for object 0 in an array.
-    // to set funtion empty i dont know it.
-    // window.location.href = "signin.html"
     localStorage.setItem("studentDetails",JSON.stringify(allStudents))
-    
 }
 function checkall(){
-    // myTable.innerHTML = ""
     for (var index = 0; index < allStudents.length; index++) {
         myTable.innerHTML += `
-        
         <tr>
                 <td> ${index+1}</td>
                 <td>${allStudents[index].firstName}</td>
@@ -60,11 +45,8 @@ function checkall(){
         </tr>`
     }
 }
-
 function checkDetails(){
-    // window.location.href = "search.html"
-    window.location.href = "signin.html"
-
+    window.location.href = "login.html"
 }
 function searchbtn(){
     var allStudents = JSON.parse(localStorage.getItem("studentDetails"))
@@ -72,15 +54,12 @@ function searchbtn(){
         opeo.innerHTML = "<h3>" + "Student information at " + searchInfo + " are; " + "<p>" + " Firstname: " + allStudents[searchInfo].firstName + "<br>" + " Lastname: " + allStudents[searchInfo].lastName + "<br>" + " Email: " + allStudents[searchInfo].email + "<br>" + " Matric-Number: " + allStudents[searchInfo].matricNumber +  "</p>" + "</h3>"
         opeo.style.color = "black"
 }
-function previous(){
-    window.location.href = "signup.html"
+function logout(){
+    window.location.href = "index.html"
 }
-
 function info(){
-    window.location.href = "info.html"
-    // allStudents = JSON.parse(localStorage.getItem("studentDetails"))
+    window.location.href = "allStudentData.html"
 }
-
 function login(){
     var myUsername = username.value
     var myPassword = password.value
@@ -91,7 +70,6 @@ function login(){
             domypass = true
             alert("Login Successfully")
         }
-        
     }
     if(domypass){
         window.location.href = "search.html"
@@ -100,9 +78,4 @@ function login(){
         disp.innerText = "Incorrect Matric No. or Password"
         disp.style.color = "red"
     }
-
-
-
-
-    // window.location.href = "search.html"
 }
