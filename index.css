@@ -2,62 +2,27 @@
     top: 0;
     margin: 0;
 }
-.mainContainer{
+section{
     background-color: #a62d3e; height: 100vh;
 }
-#container{
-    display: flex;
+center{
+    padding-top: 10px;
 }
-.sectionContainer1{
-    background-color: white; border: 1px red solid; width: 50%; padding-top: 55px;
+img{
+    height: 150px;
 }
-.sectionContainer1 div{
-    text-align: center;
-}
-.sectionContainer1 img{
-    width: 100%;
-}
-.sectionContainer2{
-    width: 50%; border: 1px red solid; padding-top: 50px;
-}
-.sectionContainer2 img{
-    height: 150px; display: block; margin-left: auto; margin-right: auto;
-}
-.sectionContainer2 div{
-    display: flex; justify-content: center; gap: 20px; margin-left: -150px; margin-top: 50px;
-}
-.sectionContainer2 section{
-    display: flex; justify-content: flex-end; gap: 5px;
+.container{
+    height: 600px; max-width: 400px; background-color: white; gap: 20px;
 }
 label{
-    font-size: 1.5em;
-}
-input{
-    font-size: 2.2em;
-    outline: none; border: 0; background-color: transparent; border-bottom: 1px solid white;
+    margin-top: 20px;
+    margin-left: -230px;
 }
 button{
     background-color: #f8da54;
+    border: 0;
 }
-
-@media all and (min-width:320px) and (max-width:425px){
-    .sectionContainer1{
-        visibility: hidden;
-    }
-    .sectionContainer2{
-        width: 10%; border: 0px red solid; padding-top: 50px;
-        margin-left: -100px
-    }
-    .sectionContainer2 img{
-        height: 150px; display: block; margin-left: auto; margin-right: auto;
-    }
-    .sectionContainer2 div{
-        display: grid; justify-content: space-around; gap: 20px; margin-left: 80px; margin-top: 50px;
-    }
-    .sectionContainer2 section{
-        display: flex; justify-content: flex-end; gap: 5px;
-    }
-    input{
-    font-size: 1.5em;
-    }
+input{
+    font-size: 1.5em; width: 30%;
+    outline: none; border: 0; background-color: transparent; border-bottom: 1px solid blue;
 }
