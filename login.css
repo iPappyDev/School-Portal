@@ -1,0 +1,20 @@
+section{
+    background-color: #a62d3e; height: 100vh;
+}
+center{
+    padding-top: 55px;
+}
+img{
+    height: 150px;
+}
+.container{
+    height: 500px; max-width: 400px; background-color: white; gap: 20px;
+}
+label{
+    margin-top: 30px;
+    margin-left: -230px;
+}
+button{
+    background-color: #f8da54;
+    border: 0;
+}

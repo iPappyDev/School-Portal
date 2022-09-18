@@ -1,0 +1,15 @@
+.sectionContainerSearch{
+    width: 50%; border: 1px red solid; padding-top: 50px;
+}
+.sectionContainerSearch img{
+    height: 150px; display: block; margin-left: auto; margin-right: auto;
+}
+.sectionContainerSearch div{
+    display: flex; justify-content: center; gap: 20px; margin-left: -150px; margin-top: 50px;
+    
+}
+input{
+    font-size: 1.5em;
+    width: 15%;
+    text-align: center;
+}

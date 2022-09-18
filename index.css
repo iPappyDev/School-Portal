@@ -24,7 +24,7 @@
     height: 150px; display: block; margin-left: auto; margin-right: auto;
 }
 .sectionContainer2 div{
-    display: grid; justify-content: center; gap: 20px; margin-left: -150px; margin-top: 50px;
+    display: flex; justify-content: center; gap: 20px; margin-left: -150px; margin-top: 50px;
 }
 .sectionContainer2 section{
     display: flex; justify-content: flex-end; gap: 5px;
@@ -36,18 +36,17 @@ input{
     font-size: 2.2em;
     outline: none; border: 0; background-color: transparent; border-bottom: 1px solid white;
 }
+button{
+    background-color: #f8da54;
+}
 
-
-
-
-/* @media all and (min-width:320px) and (max-width:425px){
+@media all and (min-width:320px) and (max-width:425px){
     .sectionContainer1{
         visibility: hidden;
     }
     .sectionContainer2{
-        width: 0%; border: 1px red solid; padding-top: 50px;
-        background-color: yellow;
-        margin-left: -80px
+        width: 10%; border: 0px red solid; padding-top: 50px;
+        margin-left: -100px
     }
     .sectionContainer2 img{
         height: 150px; display: block; margin-left: auto; margin-right: auto;
@@ -58,4 +57,7 @@ input{
     .sectionContainer2 section{
         display: flex; justify-content: flex-end; gap: 5px;
     }
-} */
+    input{
+    font-size: 1.5em;
+    }
+}
