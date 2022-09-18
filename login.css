@@ -23,11 +23,18 @@ button{
     border: 0;
 }
 input{
-    font-size: 1.5em; width: 30%;
-    outline: none; border: 0; background-color: transparent; border-bottom: 1px solid blue;
+    font-size: 1.5em;
+    width: 30%;
+    outline: none;
+    border: 0;
+    background-color: transparent; 
+    border-bottom: 1px solid blue;
 }
 #infopage {
     min-height: 100vh;
-    background-color: rgb(104, 11, 11);
+    background-color: #a62d3e;
     color: white ;
+}
+#myTable{
+    color: white;
 }
